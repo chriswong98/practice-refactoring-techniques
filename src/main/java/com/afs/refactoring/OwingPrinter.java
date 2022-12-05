@@ -13,13 +13,11 @@ public class OwingPrinter {
     }
 
     private void printDetails(String name, int outstanding){
-        // print details
         System.out.println("name: " + name);
         System.out.println("amount: " + outstanding);
     }
 
     private void printBanner() {
-        // print banner
         System.out.println ("*****************************");
         System.out.println ("****** Customer totals ******");
         System.out.println ("*****************************");
