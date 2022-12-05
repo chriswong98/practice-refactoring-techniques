@@ -9,6 +9,10 @@ public class OwingPrinter {
 
         printBanner();
 
+        printDetails(name, outstanding);
+    }
+
+    private void printDetails(String name, int outstanding){
         // print details
         System.out.println("name: " + name);
         System.out.println("amount: " + outstanding);
