@@ -18,10 +18,6 @@ public class OwingPrinter {
     }
 
     private int calculateOutstanding(List<Order> orders) {
-        return calculateOutstandingTemp(orders);
-    }
-
-    private int calculateOutstandingTemp(List<Order> orders){
         return orders.stream()
                 .mapToInt(order -> order.getAmount())
                 .sum();
